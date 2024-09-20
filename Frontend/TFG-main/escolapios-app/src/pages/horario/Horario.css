@@ -1,0 +1,68 @@
+.horarioContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.schedule-header, .schedule-row {
+  display: grid;
+  grid-template-columns: 1fr repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.empty-cell {
+  background-color: transparent;
+}
+
+.day_title {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.hour {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #444;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.class {
+  text-align: center;
+  padding: 10px 5px;
+  border-radius: 3px;
+  color: #000;
+  font-weight: bold;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.class.empty {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.class[data-tooltip]:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 0.8em;
+  white-space: nowrap;
+}
