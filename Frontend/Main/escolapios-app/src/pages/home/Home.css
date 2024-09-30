@@ -1,0 +1,431 @@
+.home-page {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(67, 138, 230);
+    background: radial-gradient(circle, rgba(67, 138, 230, 0.23012955182072825) 0%, rgba(148, 187, 233, 0) 100%);
+}
+
+#fuenteGrande {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 40px;
+    letter-spacing: 2.4px;
+    word-spacing: 1.4px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+}
+
+#fuenteAsignaturas {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 20px;
+    letter-spacing: 2.5px;
+    word-spacing: 1.5px;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+}
+
+#fuenteNormal {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    word-spacing: 1px;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+}
+
+#fuenteChiquita {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+}
+
+.imagen-alumno {
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 2%;
+    margin-right: 2%;
+    border: 2.5px solid #5281eeac;
+    cursor: pointer;
+}
+
+.errorMessage {
+    text-align: center;
+}
+
+.home-page__top-panel {
+    height: 9%;
+    /* Altura de la cabecera */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.home-page__background {
+    position: absolute;
+    background-image: url("/src/assets/logo1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: 0.2;
+    z-index: -1;
+    /* Colocar imagen detrás */
+    background-attachment: fixed;
+}
+
+.container {
+    background-color: rgba(52, 111, 247, 0.5);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 20px;
+    margin-left: 20%;
+    position: absolute;
+    margin-top: 4%;
+    transition: margin-left 0.3s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.subject-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.subject {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    /* Bordes redondeados */
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.subject:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.subject:focus,
+.opcion:focus,
+.pestana:focus {
+    outline: none;
+    /* Eliminar el contorno al hacer clic */
+}
+
+.barra-lateral {
+    position: fixed;
+    top: 9%;
+    /* Altura del header */
+    left: 0;
+    width: 20%;
+    height: calc(100vh - 9%);
+    /* Altura ajustada para ocupar el espacio restante */
+    background: rgba(52, 111, 247, 0.5);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    transition: left 0.3s ease;
+    border-radius: 25px;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.navigation {
+    align-items: center;
+}
+
+
+.navigation li {
+    list-style: none;
+    width: 90%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    text-align: center;
+}
+
+.opcion {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding: 10px 2px;
+    /* Ajustar el espaciado interno de los botones */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    width: calc(100% - 40px);
+    /* Ajustar el ancho del botón para que tenga el mismo margen a ambos lados */
+    margin: 5px 0;
+    /* Ajustar el margen vertical */
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    align-self: center;
+}
+
+.opcion:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.containerFormularioAdd .opcion {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding: 10px 2px;
+    /* Ajustar el espaciado interno de los botones */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    width: calc(100% - 40px);
+    /* Ajustar el ancho del botón para que tenga el mismo margen a ambos lados */
+    margin: 5px 0;
+    /* Ajustar el margen vertical */
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    align-self: center;
+    display: inline-block;
+    min-height: 50px;
+}
+
+.containerFormularioAdd .opcion:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.barra-visible .container {
+    margin-left: 30%;
+}
+
+.top-panel-options {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.pestana {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding: 10px 0;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    width: 90%;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    word-spacing: 1px;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+    margin-bottom: 2%;
+}
+
+.pestana:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pestana-activa {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.container input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.container button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.containerLista {
+    background-color: rgba(52, 111, 247, 0.5);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 20px;
+    margin-left: 10%;
+    position: absolute;
+    margin-top: 7%;
+    transition: margin-left 0.3s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.containerLista label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.containerLista input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.barra-visible .containerLista {
+    margin-left: 23%;
+}
+
+.containerFormularioAdd {
+    background-color: rgba(52, 111, 247, 0.5);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 20px;
+    margin-left: 20%;
+    position: absolute;
+    margin-top: 7%;
+    transition: margin-left 0.3s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.containerFormularioAdd label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.containerFormularioAdd input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.barra-visible .containerFormularioAdd {
+    margin-left: 30%;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.profile-placeholder {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.custom-table3 {
+    margin-top: 2.5%;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 20px;
+    table-layout: fixed;
+}
+
+.custom-table3 th {
+    text-align: center;
+    padding: 8px 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.custom-table3 td {
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.flecha-atras {
+    position: absolute;
+    cursor: pointer;
+    width: 40px;
+    /* Ancho deseado de la flecha */
+    height: 40px;
+    /* Altura deseada de la flecha */
+    background-image: url("../../assets/flecha.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.flecha-atras:hover {
+    opacity: 0.8;
+}
+
+.separacion {
+    margin-top: 20px;
+}
+
+.separacion2 {
+    margin-top: 7%;
+}
+
+.separacion3 {
+    margin-top: 1%;
+    padding-left: 5%;
+}
+
+.miniatura {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contact-box {
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    overflow-y: auto;
+  }
+  
+  .subject-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 2%;
+  }
