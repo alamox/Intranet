@@ -9,7 +9,7 @@ Es un proyecto en el que, en conjunto con una compañera, hicimos una intranet p
 
 ## Tecnologías 🛠
 <!-- Iconos sacados de: https://github.com/hendrasob/badges/blob/master/README.md y https://github.com/alexandresanlim/Badges4-README.md-Profile -->
-[![JAVA](https://img.shields.io/badge/Java-E34F26?style=for-the-badge&logo=Java&logoColor=white)](https://es.wikipedia.org/wiki/Java)
+[![JAVA](https://img.shields.io/badge/Java-E34F26?style=for-the-badge&logo=java&logoColor=white)](https://es.wikipedia.org/wiki/Java)
 [![MySQL](https://img.shields.io/badge/MySQL-E34F26?style=for-the-badge&logo=MySQL&logoColor=blue)](https://es.wikipedia.org/wiki/MySQL)
 [![SpringBoot](https://img.shields.io/badge/SpringBoot-E34F26?style=for-the-badge&logo=SpringBoot&logoColor=green)](https://es.wikipedia.org/wiki/SpringBoot)
 [![Hibernate](https://img.shields.io/badge/Hibernate-E34F26?style=for-the-badge&logo=Hibernate&logoColor=black)](https://es.wikipedia.org/wiki/Hibernate)
