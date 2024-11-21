@@ -5,7 +5,7 @@ Proyecto para la realización de intranet en centro de estudios La Inmaculada-Pa
 Intranet para centro de estudios La Inmaculada-Padres Escolapios
 
 ## Descripción 📑
-Es un proyecto en el que, en conjunto con una compañera, hicimos una intranet para un centro educativo donde yo me encargué del backend. Se utilizó una estructura con SpringBoot. 
+Es un proyecto en el que, en conjunto con una compañera, hicimos una intranet para un centro educativo donde yo me encargué del backend. Se utilizó una estructura con SpringBoot donde dividí el código entre Entities, Controllers, Repositorios y Servicios. sus funciones son: registrar todos los alumnos matriculados de ese centro, a la par que profesores y asignaturas, poner faltas, subir archivos (trabajos), subir calificaciones, editar perfil de alumnos y profesores, dar de alta y baja y, además, cuenta con un foro donde los alumnos pueden chatear entre ellos para consultar dudas.
 
 ## Tecnologías 🛠
 <!-- Iconos sacados de: https://github.com/hendrasob/badges/blob/master/README.md y https://github.com/alexandresanlim/Badges4-README.md-Profile -->
@@ -14,17 +14,11 @@ Es un proyecto en el que, en conjunto con una compañera, hicimos una intranet p
 [![SpringBoot](https://img.shields.io/badge/SpringBoot-39890B?style=for-the-badge&logo=SpringBoot&logoColor=white)](https://es.wikipedia.org/wiki/SpringBoot)
 [![Hibernate](https://img.shields.io/badge/Hibernate-000000?style=for-the-badge&logo=Hibernate&logoColor=white)](https://es.wikipedia.org/wiki/Hibernate)
 
-## Vista previa del proyecto
-![buscaminas](https://github.com/user-attachments/assets/61d0325a-565c-48cf-8e27-7a8a08100fd5)
-
 ## Autor ✒️
 **Adrián Álamo Castro**
 
 * [Correo](adrala99@gmail.com)
 * [LinkedIn](www.linkedin.com/in/adrián-álamo-castro)
-
-## Instalación 
-Descarga el contenido e importalo en tu plataforma de desarrollo favorita, en este caso he usado Eclipse.
   
 ## Licencia 📄
 MIT Public License v3.0
