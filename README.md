@@ -1,6 +1,3 @@
-# Intranet para centro de estudios La Inmaculada-Padres Escolapios
-Proyecto para la realización de intranet en centro de estudios La Inmaculada-Padres Escolapios. Esta intranet registra todos los alumnos matriculados de ese centro, a la par que profesores y asignaturas hay. Algunas de sus funciones son: poner faltas, subir archivos (trabajos), subir calificaciones, editar perfil de alumnos y profesores, dar de alta y baja y, además, cuenta con un foro donde los alumnos pueden chatear entre ellos para consultar dudas. De todo este proyecto yo me encargue de la parte del Backend donde se utilizó Java, SpringBoot e Hibernate, JPA
-
 # Título del proyecto
 Intranet para centro de estudios La Inmaculada-Padres Escolapios
 
