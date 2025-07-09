@@ -2,7 +2,7 @@
 Intranet para centro de estudios La Inmaculada-Padres Escolapios
 
 ## Descripción 📑
-Es un proyecto en el que cogimos como modelo el centro de estudios La Inmaculada-Padres Escolapios e hicimos una intranet donde me encargué de la parte backend. Utilicé una estructura con SpringBoot de Entities, Controllers, Repositries y Servicies. Las funciones que incluye son: registrar todos los alumnos matriculados de ese centro, a la par que profesores y asignaturas, poner faltas, subir archivos (trabajos), subir calificaciones, editar perfil de alumnos y profesores, dar de alta y baja y, además, cuenta con un foro donde los alumnos pueden chatear entre ellos para consultar dudas.
+Proyecto en el que utilizamos como modelo el centro de estudios La Inmaculada-Padres Escolapios e hicimos una intranet donde me encargué de la parte backend. Utilicé una estructura con SpringBoot de Entities, Controllers, Repositries y Servicies. Las funciones que incluye son: registrar todos los alumnos matriculados de ese centro, a la par que profesores y asignaturas, poner faltas, subir archivos (trabajos), subir calificaciones, editar perfil de alumnos y profesores, dar de alta y baja y, además, cuenta con un foro donde los alumnos pueden chatear entre ellos para consultar dudas.
 
 ## Tecnologías 🛠
 <!-- Iconos sacados de: https://github.com/hendrasob/badges/blob/master/README.md y https://github.com/alexandresanlim/Badges4-README.md-Profile -->
